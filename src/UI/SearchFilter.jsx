@@ -6,15 +6,13 @@ export const SearchFilter = ({
     countries,
     setCountries,
 }) => {
-
     const handleinputChnage = (event) => {
-     
         setSearch(event.target.value);
     };
+
     const handleSelectChange = (e) => {
-      
-        setFilter(e.target.value)
-    }
+        setFilter(e.target.value);
+    };
 
     // aesc & desc
     const sortCountries = (value) => {
@@ -29,46 +27,46 @@ export const SearchFilter = ({
         setCountries(sortCountry);
     };
 
+    return (
+        <section className="p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            {/* Search */}
+            <input
+                type="text"
+                placeholder="Search"
+                value={search}
+                onChange={handleinputChnage}
+                className="border border-white text-gray-300 p-2 px-4 rounded-full bg-transparent w-full sm:w-64"
+            />
 
-    return <section className="p-10 flex justify-between">
-        <input
-            type="text"
-            placeholder="Seacrh"
-            value={search}
-            onChange={handleinputChnage}
-            className="border-white border text-gray-300 flex p-1 px-4 rounded-full"
-        />
-        <div>
-            <button
-                className="border text-white p-1 px-2 rounded-full cursor-pointer"
-                onClick={() => sortCountries("asc")}
-            >
-                Asc
-            </button>
-        </div>
+            {/* Buttons + Select */}
+            <div className="flex flex-wrap gap-3 items-center">
+                <button
+                    className="border text-white py-1 px-3 rounded-full cursor-pointer hover:bg-white hover:text-black transition"
+                    onClick={() => sortCountries("asc")}
+                >
+                    Asc
+                </button>
 
-        <div>
-            <button
-                className="border text-white p-1 px-2 rounded-full cursor-pointer"
-                onClick={() => sortCountries("desc")} 
-            >
-                Desc
-            </button>
-        </div>
+                <button
+                    className="border text-white py-1 px-3 rounded-full cursor-pointer hover:bg-white hover:text-black transition"
+                    onClick={() => sortCountries("desc")}
+                >
+                    Desc
+                </button>
 
-        <div className="text-white">
-            <select
-                className=" border rounded-full border-gray-400 cursor-pointer outline-0 p-1 px-2 bg-black"
-                value={Filter}
-                onChange={handleSelectChange}
-            >
-                <option value="all">All</option>
-                <option value="Africa">Africa</option>
-                <option value="Americas">Americas</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europe</option>
-                <option value="Oceania">Oceania</option>
-            </select>
-        </div>
-    </section>
-}
+                <select
+                    className="border rounded-full border-gray-400 cursor-pointer outline-0 py-1 px-3 bg-black text-white"
+                    value={Filter}
+                    onChange={handleSelectChange}
+                >
+                    <option value="all">All</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+        </section>
+    );
+};
