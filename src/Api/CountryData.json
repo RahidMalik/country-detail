@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 125960000,
+    "interestingFact": "Japan has more vending machines than people in some cities!"
+  },
+  {
+    "id": 2,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": 25700000,
+    "interestingFact": "Australia is wider than the moon!"
+  },
+  {
+    "id": 3,
+    "countryName": "Brazil",
+    "capital": "Brasília",
+    "population": 214000000,
+    "interestingFact": "Brazil is home to the Amazon Rainforest, the largest tropical rainforest in the world."
+  },
+  {
+    "id": 4,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": 38500000,
+    "interestingFact": "Canada has the longest coastline of any country in the world."
+  },
+  {
+    "id": 5,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": 109000000,
+    "interestingFact": "The Great Pyramid of Giza was the tallest man-made structure for over 3,800 years."
+  },
+  {
+    "id": 6,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1410000000,
+    "interestingFact": "India is the birthplace of chess!"
+  },
+  {
+    "id": 7,
+    "countryName": "Norway",
+    "capital": "Oslo",
+    "population": 5450000,
+    "interestingFact": "Norway introduced salmon sushi to the world."
+  },
+  {
+    "id": 8,
+    "countryName": "Italy",
+    "capital": "Rome",
+    "population": 60300000,
+    "interestingFact": "Italy has the most UNESCO World Heritage Sites in the world."
+  },
+  {
+    "id": 9,
+    "countryName": "Russia",
+    "capital": "Moscow",
+    "population": 144000000,
+    "interestingFact": "Russia spans 11 time zones!"
+  },
+  {
+    "id": 10,
+    "countryName": "Kenya",
+    "capital": "Nairobi",
+    "population": 53700000,
+    "interestingFact": "Kenya is home to the Great Wildebeest Migration, one of the largest animal migrations on Earth."
+  }
+]

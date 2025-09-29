@@ -1,0 +1,22 @@
+{
+  "footerItems": [
+    {
+      "id": 1,
+      "icon": "FaMapMarkerAlt",
+      "title": "Our Office",
+      "detail": "islamabad / Rawalpindi, Pakistan"
+    },
+    {
+      "id": 2,
+      "icon": "FaPhoneAlt",
+      "title": "Call Us",
+      "detail": "+923120542109"
+    },
+    {
+      "id": 3,
+      "icon": "FaEnvelope",
+      "title": "Email Us",
+      "detail": "malikrahid011@gmail.com"
+    }
+  ]
+}
